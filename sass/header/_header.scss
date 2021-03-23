@@ -1,0 +1,14 @@
+.header {
+  padding-top: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  margin-left: 30px;
+}

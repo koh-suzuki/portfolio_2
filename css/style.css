@@ -210,8 +210,12 @@ progress {
   cursor: default;
 }
 
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 body {
-  font-size: 62.5%;
+  font-size: 100%;
   background-color: #fff;
 }
 
@@ -225,5 +229,86 @@ ul {
 
 img {
   vertical-align: top;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.header,
+.header__item {
+  font-family: 'Noto Serif';
+  font-style: Italic;
+  color: #FFFFFF;
+}
+
+.header__item > a {
+  color: #FFFFFF;
+}
+
+.header__logo {
+  font-size: 26px;
+  font-weight: Bold;
+  line-height: 1.38462;
+  letter-spacing: 0.05em;
+}
+
+/* fv */
+.fv__title {
+  font-family: "Noto Serif";
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 0.71429;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.fv__sub-title {
+  font-family: "Noto Serif JP";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item {
+  margin-left: 30px;
+}
+
+.fv__bg {
+  background: url(/img/fv-bgi_01@2x.jpg) no-repeat center/cover;
+  height: 752px;
+}
+
+.fv__content {
+  position: absolute;
+  left: 120px;
+  top: 409px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.fv__title {
+  margin-bottom: 31px;
+  padding: 23px 0 22px;
 }
 /*# sourceMappingURL=style.css.map */

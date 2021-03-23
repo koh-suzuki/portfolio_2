@@ -1,0 +1,18 @@
+.fv__bg {
+  background: url(/img/fv-bgi_01@2x.jpg) no-repeat center / cover;
+  height: 752px;
+  // position: relative;
+}
+.fv__content {
+  position: absolute;
+  left: 120px;
+  top: 409px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+.fv__title {
+  margin-bottom: 31px;
+  padding: 23px 0 22px;
+}

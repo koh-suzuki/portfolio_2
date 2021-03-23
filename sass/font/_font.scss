@@ -1,0 +1,28 @@
+/* header */ 
+.header,
+.header__item {
+  font-family: 'Noto Serif';
+  font-style: Italic;
+  color: #FFFFFF;
+  }
+  .header__item > a {
+    color: #FFFFFF;
+  }
+.header__logo {
+  // //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(26, 36, Bold, 50);
+}
+
+/* fv */ 
+.fv__title {
+  font-family: "Noto Serif";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(70, 50, bold, 50);
+  color: #FFFFFF;
+}
+.fv__sub-title {
+  font-family: "Noto Serif JP";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(40, 50, bold, 50);
+  color: #FFFFFF;
+}

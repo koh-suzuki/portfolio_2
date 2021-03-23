@@ -24,9 +24,11 @@ letter-spacing: ($spacing / 1000) * 1em;
 //main__color: #;
 //main__bg__color: ;
 
-
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 body {
-font-size: 62.5%;
+font-size: 100%;
 background-color: #fff;
 }
 a {
@@ -37,4 +39,8 @@ list-style: none;
 }
 img {
 vertical-align: top;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
