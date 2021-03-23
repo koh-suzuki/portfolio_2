@@ -1,19 +1,17 @@
-/* header */ 
 .header,
 .header__item {
   font-family: 'Noto Serif';
   font-style: Italic;
   color: #FFFFFF;
-  }
-  .header__item > a {
-    color: #FFFFFF;
-  }
+}
+.header__item > a {
+  color: #FFFFFF;
+}
 .header__logo {
   // //フォントサイズ, 行送り, 太さ, 字送り
   @include f_around(26, 36, Bold, 50);
 }
 
-/* fv */ 
 .fv__title {
   font-family: "Noto Serif";
   //フォントサイズ, 行送り, 太さ, 字送り
@@ -25,4 +23,35 @@
   //フォントサイズ, 行送り, 太さ, 字送り
   @include f_around(40, 50, bold, 50);
   color: #FFFFFF;
+}
+
+/*** content ***/ 
+.content__title,
+.content__sub-title {
+  font-family: 'Noto Serif';
+}
+.content__title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(60, 24, bold, 50);
+  font-style: Italic;
+  color: #282F35;
+}
+.content__sub-title {
+  color: #171717;
+  opacity: 5%;
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(90, 29, bold, 50);
+}
+.concept__lead,
+.concept__text {
+  font-family: "Noto Serif JP";
+  color: #171717;
+}
+.concept__lead {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(30, 50, bold, 50);
+}
+.concept__text {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(16, 30, bold, 50);
 }

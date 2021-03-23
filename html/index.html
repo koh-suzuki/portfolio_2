@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-  <section class="section__wrapper fv__bg ">
+  <section class="section__wrapper fv__bg" id="fv">
     <header class="header container">
       <h1 class="header__logo">Cresta Design</h1>
       <nav class="header__nav">
@@ -27,34 +27,33 @@
     </div>
   </section>
   <main class="main">
-    <section class="section__wrapper" id="concept">
-      <div class="container">
-        <!-- concept__text__wrap内でflexbox -->
-        <div class="content__wrap"> 
+    <section class="section__wrapper container" id="concept">
+      <div class="concept__wrapper">
+        <div class="content"> 
           <h3 class="content__title">CONCEPT</h3>
-          <span class="content__border"></span>
+          <hr class="border">
         </div>
-        <p class="concept__sub-title">
+        <p class="concept__lead">
           “働きたくなる空間”をデザインすることで<br>
           人々を幸せにする。
         </p>
-        <div class="content__concept__wrap">
+        <div class="concept__inner">
           <p class="concept__text">
             私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
           </p>
           <figure class="concept__img">
-            <img src="" alt="コンセプトの画像">
+            <img src="/img/concept-image@2x.jpg" alt="コンセプトの画像">
           </figure>          
         </div>
         <!-- rightで対応 -->
-        <p class="content__sub-text">Our Concept</p>
+        <p class="content__sub-title">Our Concept</p>
       </div>
     </section>
     <section class="section__wrapper works__bg" id="works">
       <div class="container">
-        <div class="content__wrap__reverse"> 
+        <div class="content__reverse"> 
           <h3 class="content__title">Works</h3>
-          <span class="content__border"></span>
+          <hr class="border">
         </div>
         <div class="content__works__wrap">
           <div class="works__list">
@@ -79,13 +78,13 @@
           </div>
         </div>
         <button type="submit">View more</button>
-        <p class="content__sub-text__reverse">Our Concept</p>
+        <p class="content__sub-title reverse">Our Works</p>
       </div>
     </section>
     <section class="section__wrapper" id="service">
-      <div class="content__wrap"> 
+      <div class="content"> 
         <h3 class="content__title">Service</h3>
-        <span class="content__border"></span>
+        <hr class="border">
       </div>
       <div class="content__service__wrap">
         <div class="works__list">
@@ -103,19 +102,19 @@
           </div>
         </div>
       </div>
-      <p class="content__sub-text">Our Concept</p>      
+      <p class="content__sub-title">Our Service</p>      
     </section>
     <section class="section__wrapper contact__bg" id="contact">
       <div class="container">
-        <div class="content__wrap__reverse"> 
+        <div class="content__reverse"> 
           <h3 class="content__title">Contact</h3>
-          <span class="content__border"></span>
+          <hr class="border">
         </div>
         <div class="contact__wrap">
           <p class="contact__text">お気軽にご相談ください。</p>
           <button type="submit">View more</button>
         </div>
-        <p class="content__sub-text__reverse">Our Concept</p>
+        <p class="content__sub-title reverse">Our Contact</p>
       </div>
     </section>
   </main>
