@@ -83,3 +83,12 @@
   font-style: Italic;
   color: #FFFFFF;
 }
+
+/* CONTACT
+------------------------------------------ */
+.contact__text {
+  font-family: "Noto Serif JP";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(20, 24, bold, 50);
+  color: #FFFFFF;
+}

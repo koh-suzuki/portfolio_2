@@ -398,6 +398,17 @@ img {
   color: #FFFFFF;
 }
 
+/* CONTACT
+------------------------------------------ */
+.contact__text {
+  font-family: "Noto Serif JP";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
 .header {
   padding-top: 10px;
 }
@@ -542,5 +553,26 @@ img {
   position: absolute;
   top: 135px;
   left: 135px;
+}
+
+.contact__bg {
+  background: url(/img/contact-bgi@2x.jpg) no-repeat center/cover;
+  height: 666px;
+}
+
+.contact__wrapper {
+  padding-top: 109px;
+}
+
+.contact__wrap {
+  margin-top: 80px;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.contact__btn {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
