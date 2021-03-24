@@ -288,7 +288,8 @@ img {
 .content__title,
 .content__sub-title,
 .btn,
-.service__title {
+.service__title,
+.copyright > small {
   font-family: 'Noto Serif';
 }
 
@@ -315,7 +316,8 @@ img {
   color: #FFFFFF;
 }
 
-/* HEADER 
+/*------------------------------------------- 
+  HEADER 
 --------------------------------------------*/
 .header,
 .header__item {
@@ -335,6 +337,9 @@ img {
   letter-spacing: 0.05em;
 }
 
+/*------------------------------------------- 
+  MAIN
+--------------------------------------------*/
 /* FV 
 --------------------------------------*/
 .fv__title {
@@ -407,6 +412,16 @@ img {
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: #FFFFFF;
+}
+
+/*------------------------------------------- 
+/* FOOTER
+------------------------------------------ */
+.copyright > small {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.14286;
+  letter-spacing: 0.05em;
 }
 
 .header {
@@ -574,5 +589,17 @@ img {
 
 .contact__btn {
   margin-top: 40px;
+}
+
+.footer {
+  height: 79px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

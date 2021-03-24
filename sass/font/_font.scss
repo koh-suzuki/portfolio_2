@@ -3,7 +3,8 @@
 .content__title,
 .content__sub-title,
 .btn,
-.service__title {
+.service__title,
+.copyright > small {
   font-family: 'Noto Serif';
 }
 .content__title {
@@ -22,7 +23,8 @@
   color: #FFFFFF;
 }
 
-/* HEADER 
+/*------------------------------------------- 
+  HEADER 
 --------------------------------------------*/
 .header,
 .header__item {
@@ -37,6 +39,11 @@
   // //フォントサイズ, 行送り, 太さ, 字送り
   @include f_around(26, 36, Bold, 50);
 }
+
+
+/*------------------------------------------- 
+  MAIN
+--------------------------------------------*/
 
 /* FV 
 --------------------------------------*/ 
@@ -91,4 +98,12 @@
   //フォントサイズ, 行送り, 太さ, 字送り
   @include f_around(20, 24, bold, 50);
   color: #FFFFFF;
+}
+
+/*------------------------------------------- 
+/* FOOTER
+------------------------------------------ */
+.copyright > small {
+  @include f_around(14, 30, bold, 50);
+
 }
