@@ -246,7 +246,7 @@ img {
 }
 
 .content__sub-title {
-  margin: 70px 0;
+  margin-top: 70px;
 }
 
 .content {
@@ -287,7 +287,8 @@ img {
 ------------------------------------------- */
 .content__title,
 .content__sub-title,
-.btn {
+.btn,
+.service__title {
   font-family: 'Noto Serif';
 }
 
@@ -386,6 +387,17 @@ img {
   color: #171717;
 }
 
+/* SERVICE
+------------------------------------------ */
+.item__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  font-style: Italic;
+  color: #FFFFFF;
+}
+
 .header {
   padding-top: 10px;
 }
@@ -430,6 +442,7 @@ img {
 .concept__wrapper {
   max-width: 1100px;
   margin: 0 0 0 auto;
+  padding-bottom: 70px;
 }
 
 .concept__lead {
@@ -506,5 +519,28 @@ img {
   padding: 19px 71px 18px;
   background-color: #F7D43F;
   border-radius: 50px;
+}
+
+.service__wrapper {
+  padding: 100px 0 70px;
+}
+
+.service__title {
+  margin-bottom: 80px;
+}
+
+.service__item {
+  position: relative;
+  max-width: 480px;
+}
+
+.service__item img {
+  width: 100%;
+}
+
+.item__title {
+  position: absolute;
+  top: 135px;
+  left: 135px;
 }
 /*# sourceMappingURL=style.css.map */

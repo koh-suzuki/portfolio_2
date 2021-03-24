@@ -1,0 +1,18 @@
+.service__wrapper {
+  padding: 100px 0 70px;
+}
+.service__title {
+  margin-bottom: 80px;
+}
+.service__item {
+  position: relative;
+  max-width: 480px;
+  img {
+    width: 100%;
+  }
+}
+.item__title {
+  position: absolute;
+  top: 135px;
+  left: 135px;
+}
