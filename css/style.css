@@ -237,9 +237,16 @@ img {
 }
 
 /*** main ***/
+.content__inner {
+  max-width: 1000px;
+}
+
 .content__title {
-  width: 315px;
   padding: 39px 0;
+}
+
+.content__sub-title {
+  margin: 70px 0;
 }
 
 .content {
@@ -253,6 +260,62 @@ img {
   margin-left: 30px;
 }
 
+.border__light {
+  width: 200px;
+  border: 5px #FFFFFF solid;
+  margin-left: 30px;
+}
+
+.content__reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.clear__light {
+  color: #FFFFFF;
+  opacity: 10%;
+  text-align: left;
+}
+
+.clear__dark {
+  color: #171717;
+  opacity: 5%;
+  text-align: right;
+}
+
+/* BASE
+------------------------------------------- */
+.content__title,
+.content__sub-title,
+.btn {
+  font-family: 'Noto Serif';
+}
+
+.content__title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 0.4;
+  letter-spacing: 0.05em;
+  font-style: Italic;
+}
+
+.content__sub-title {
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1.16667;
+  letter-spacing: 0.05em;
+}
+
+.title__color--dark {
+  color: #282F35;
+}
+
+.title__color--light {
+  color: #FFFFFF;
+}
+
+/* HEADER 
+--------------------------------------------*/
 .header,
 .header__item {
   font-family: 'Noto Serif';
@@ -271,11 +334,13 @@ img {
   letter-spacing: 0.05em;
 }
 
+/* FV 
+--------------------------------------*/
 .fv__title {
   font-family: "Noto Serif";
   font-size: 70px;
   font-weight: bold;
-  line-height: 0.71429;
+  line-height: 1.3;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
@@ -289,30 +354,8 @@ img {
   color: #FFFFFF;
 }
 
-/*** content ***/
-.content__title,
-.content__sub-title {
-  font-family: 'Noto Serif';
-}
-
-.content__title {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 0.4;
-  letter-spacing: 0.05em;
-  font-style: Italic;
-  color: #282F35;
-}
-
-.content__sub-title {
-  color: #171717;
-  opacity: 5%;
-  font-size: 90px;
-  font-weight: bold;
-  line-height: 0.32222;
-  letter-spacing: 0.05em;
-}
-
+/* CONCEPT 
+------------------------------------------ */
 .concept__lead,
 .concept__text {
   font-family: "Noto Serif JP";
@@ -331,6 +374,16 @@ img {
   font-weight: bold;
   line-height: 1.875;
   letter-spacing: 0.05em;
+}
+
+/* WORKS
+------------------------------------------ */
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #171717;
 }
 
 .header {
@@ -368,12 +421,10 @@ img {
 
 .fv__title {
   margin-bottom: 31px;
-  padding: 23px 0 22px;
 }
 
 #concept {
   margin-top: 100px;
-  padding-bottom: 70px;
 }
 
 .concept__wrapper {
@@ -405,9 +456,55 @@ img {
   height: auto;
 }
 
-.content__sub-title {
-  text-align: right;
-  padding: 47px 0;
-  margin-top: 70px;
+.works__bg {
+  background: url(/img/works-bgi@2x.jpg) no-repeat center/cover;
+  height: 986px;
+}
+
+.works__list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #000000;
+  margin-right: 20px;
+}
+
+.works__img img {
+  width: 100%;
+  height: auto;
+}
+
+.works__text {
+  padding: 25px 20px;
+}
+
+.works__clear {
+  opacity: 10%;
+}
+
+.works__title {
+  margin: 104px 0 80px;
+}
+
+.works__title__space {
+  margin-right: 18px;
+}
+
+.button__wrapper {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 19px 71px 18px;
+  background-color: #F7D43F;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */

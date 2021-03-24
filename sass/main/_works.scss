@@ -1,0 +1,42 @@
+.works__bg {
+  background: url(/img/works-bgi@2x.jpg) no-repeat center / cover;
+  height: 986px;
+}
+.works__list {
+  display: flex;
+  margin: 0 auto;
+}
+.works__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px#000000;
+  margin-right: 20px;
+}
+.works__img img {
+  width: 100%;
+  height: auto;
+}
+.works__text {
+  padding: 25px 20px;
+}
+.works__clear {
+  opacity: 10%;
+}
+.works__title {
+  margin: 104px 0 80px
+}
+.works__title__space {
+  margin-right: 18px;
+}
+.button__wrapper {
+  text-align: center;
+  margin-top: 80px;
+}
+.btn {
+  display: inline-block;
+  padding: 19px 71px 18px;
+  background-color: #F7D43F;
+  border-radius: 50px;
+}

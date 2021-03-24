@@ -1,3 +1,28 @@
+/* BASE
+------------------------------------------- */ 
+.content__title,
+.content__sub-title,
+.btn {
+  font-family: 'Noto Serif';
+}
+.content__title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(60, 24, bold, 50);
+  font-style: Italic;
+}
+.content__sub-title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(90, 105, bold, 50);
+}
+.title__color--dark {
+  color: #282F35;
+}
+.title__color--light {
+  color: #FFFFFF;
+}
+
+/* HEADER 
+--------------------------------------------*/
 .header,
 .header__item {
   font-family: 'Noto Serif';
@@ -12,10 +37,12 @@
   @include f_around(26, 36, Bold, 50);
 }
 
+/* FV 
+--------------------------------------*/ 
 .fv__title {
   font-family: "Noto Serif";
   //フォントサイズ, 行送り, 太さ, 字送り
-  @include f_around(70, 50, bold, 50);
+  @include f_around(70, 91, bold, 50);
   color: #FFFFFF;
 }
 .fv__sub-title {
@@ -25,23 +52,8 @@
   color: #FFFFFF;
 }
 
-/*** content ***/ 
-.content__title,
-.content__sub-title {
-  font-family: 'Noto Serif';
-}
-.content__title {
-  //フォントサイズ, 行送り, 太さ, 字送り
-  @include f_around(60, 24, bold, 50);
-  font-style: Italic;
-  color: #282F35;
-}
-.content__sub-title {
-  color: #171717;
-  opacity: 5%;
-  //フォントサイズ, 行送り, 太さ, 字送り
-  @include f_around(90, 29, bold, 50);
-}
+/* CONCEPT 
+------------------------------------------ */ 
 .concept__lead,
 .concept__text {
   font-family: "Noto Serif JP";
@@ -54,4 +66,11 @@
 .concept__text {
   //フォントサイズ, 行送り, 太さ, 字送り
   @include f_around(16, 30, bold, 50);
+}
+
+/* WORKS
+------------------------------------------ */
+.btn {
+  @include f_around(16, 16, bold, 50);
+  color: #171717;
 }
