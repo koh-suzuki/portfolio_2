@@ -1,5 +1,15 @@
-.header {
+#fv {
   padding-top: 10px;
+}
+.header__wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transition: background-color 1s;
+}
+.header__wrapper.js__scroll__head {
+  background-color: #282F35;
+  transition: background-color 1s;
 }
 .header {
   display: flex;

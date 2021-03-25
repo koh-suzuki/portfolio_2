@@ -9,7 +9,7 @@
 }
 .content__title {
   //フォントサイズ, 行送り, 太さ, 字送り
-  @include f_around(60, 24, bold, 50);
+  @include f_around(60, 48, bold, 100);
   font-style: Italic;
 }
 .content__sub-title {
@@ -78,6 +78,11 @@
 
 /* WORKS
 ------------------------------------------ */
+.works__text {
+  font-family: "Noto Serif JP";
+  @include f_around(16, 30, false, 50);
+  color: #141414;
+}
 .btn {
   @include f_around(16, 16, bold, 50);
   color: #171717;
@@ -85,7 +90,7 @@
 
 /* SERVICE
 ------------------------------------------ */
-.item__title {
+.item__title > a {
   @include f_around(40, 50, bold, 50);
   font-style: Italic;
   color: #FFFFFF;

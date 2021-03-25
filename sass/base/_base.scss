@@ -46,11 +46,14 @@ vertical-align: top;
 }
 
 /*** main ***/ 
+.main {
+  padding-top: 100px;
+}
 .content__inner {
   max-width: 1000px;
 }
 .content__title {
-  padding: 39px 0;
+  // padding: 39px 0;
 }
 .content__sub-title {
   margin-top: 70px;

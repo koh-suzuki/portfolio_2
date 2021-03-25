@@ -237,12 +237,12 @@ img {
 }
 
 /*** main ***/
-.content__inner {
-  max-width: 1000px;
+.main {
+  padding-top: 100px;
 }
 
-.content__title {
-  padding: 39px 0;
+.content__inner {
+  max-width: 1000px;
 }
 
 .content__sub-title {
@@ -296,8 +296,8 @@ img {
 .content__title {
   font-size: 60px;
   font-weight: bold;
-  line-height: 0.4;
-  letter-spacing: 0.05em;
+  line-height: 0.8;
+  letter-spacing: 0.1em;
   font-style: Italic;
 }
 
@@ -384,6 +384,14 @@ img {
 
 /* WORKS
 ------------------------------------------ */
+.works__text {
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  color: #141414;
+}
+
 .btn {
   font-size: 16px;
   font-weight: bold;
@@ -394,7 +402,7 @@ img {
 
 /* SERVICE
 ------------------------------------------ */
-.item__title {
+.item__title > a {
   font-size: 40px;
   font-weight: bold;
   line-height: 1.25;
@@ -424,8 +432,20 @@ img {
   letter-spacing: 0.05em;
 }
 
-.header {
+#fv {
   padding-top: 10px;
+}
+
+.header__wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transition: background-color 1s;
+}
+
+.header__wrapper.js__scroll__head {
+  background-color: #282F35;
+  transition: background-color 1s;
 }
 
 .header {
@@ -449,6 +469,7 @@ img {
 
 .fv__content {
   position: absolute;
+  z-index: 1;
   left: 120px;
   top: 409px;
   display: flex;
@@ -459,10 +480,6 @@ img {
 
 .fv__title {
   margin-bottom: 31px;
-}
-
-#concept {
-  margin-top: 100px;
 }
 
 .concept__wrapper {
@@ -516,7 +533,8 @@ img {
 
 .works__img img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 .works__text {
@@ -557,6 +575,7 @@ img {
 
 .service__item {
   position: relative;
+  z-index: 1;
   max-width: 480px;
   background: #282F35;
   overflow: hidden;
