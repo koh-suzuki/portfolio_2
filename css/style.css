@@ -465,6 +465,7 @@ img {
 .fv__bg {
   background: url(/img/fv-bgi_01@2x.jpg) no-repeat center/cover;
   height: 752px;
+  position: relative;
 }
 
 .fv__content {
@@ -563,6 +564,7 @@ img {
   padding: 19px 71px 18px;
   background-color: #F7D43F;
   border-radius: 50px;
+  box-shadow: 0 0 6px #1B1310;
 }
 
 .service__wrapper {
@@ -631,6 +633,108 @@ img {
 }
 
 .copyright {
+  text-align: center;
+}
+
+.contact__sub-title {
+  font-family: 'Noto Serif JP';
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1.66667;
+  letter-spacing: 0.05em;
+}
+
+/* form__wrapper
+-------------------------------------- */
+.contact__title,
+.form__label {
+  font-family: "Noto Serif";
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.checkbox__label {
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.form__text,
+.form__textarea {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+/* contactの背景画像内
+----------------------------------- */
+.contact__fv__wrapper {
+  height: 453px;
+  position: relative;
+}
+
+.contact__title--center {
+  position: absolute;
+  top: 186px;
+  left: 586px;
+  z-index: 1;
+}
+
+.contact__sub-title {
+  position: absolute;
+  left: 48px;
+  bottom: 40px;
+  z-index: 1;
+}
+
+/* main
+----------------------------------- */
+.contact__main__wrapper {
+  padding-bottom: 80px;
+}
+
+.form__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.checkbox__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.checkbox__label {
+  margin-right: 20px;
+}
+
+.form__text,
+.form__textarea {
+  border: 1px solid #141414;
+  width: 100%;
+  padding: 3px;
+}
+
+.form__text {
+  height: 30px;
+}
+
+.form__textarea {
+  height: 171px;
+  resize: none;
+}
+
+.form__inner {
+  margin-top: 25px;
+}
+
+.form__submit {
+  margin-top: 80px;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.contact__sub-title {
+  font-family: 'Noto Serif JP';
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(90, 150, bold, 50);
+}
+
+/* form__wrapper
+-------------------------------------- */ 
+.contact__title,
+.form__label {
+  font-family: "Noto Serif";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(16, 30, false, 50);
+  color: #171717;
+}
+.checkbox__label {
+  font-family: "Noto Serif JP";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(16, 19, false, 50);
+  color: #171717;
+}
+.form__text,
+.form__textarea {
+  @include f_around(16, 30, false, 50);
+  color: #171717;
+}
