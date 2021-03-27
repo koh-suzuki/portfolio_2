@@ -1,6 +1,7 @@
 .works__bg {
   background: url(/img/works-bgi@2x.jpg) no-repeat center / cover;
   height: 986px;
+  object-fit: cover;
 }
 .works__list {
   display: flex;
@@ -41,4 +42,27 @@
   background-color: #F7D43F;
   border-radius: 50px;
   box-shadow: 0 0 6px #1B1310;
+}
+
+/* -----------------------------------------
+              SP画面
+------------------------------------------ */ 
+@include mq-down($breakpoint: md) {
+  .works__bg {
+    height: 1533px;
+    padding-bottom: 40px;
+  }
+  .works__title {
+    margin: 100px 0 50px;
+  }
+  .works__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -30px;
+  }
+  .works__item {
+    margin-right: 0;
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
 }

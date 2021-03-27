@@ -43,6 +43,7 @@ vertical-align: top;
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*** main ***/ 
@@ -82,4 +83,17 @@ vertical-align: top;
   color: #171717;
   opacity: 5%;
   text-align: right;
+}
+
+/* ------------------------------
+SP画面
+------------------------------- */ 
+@include mq-down($breakpoint: md) {
+  .container {
+    min-width: 345px;
+  }
+  .border,
+  .border__light {
+    width: 90px;
+  }
 }

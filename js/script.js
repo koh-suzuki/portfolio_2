@@ -9,4 +9,9 @@ $(function() {
       $(".header__wrapper").removeClass("js__scroll__head");
     }
   });
+
+  $('.nav_toggle').on('click', function () {
+    $('.nav_toggle, .nav').toggleClass('show');
+  });
+    
 });

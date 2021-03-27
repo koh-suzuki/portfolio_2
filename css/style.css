@@ -234,6 +234,7 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*** main ***/
@@ -283,6 +284,19 @@ img {
   text-align: right;
 }
 
+/* ------------------------------
+SP画面
+------------------------------- */
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 345px;
+  }
+  .border,
+  .border__light {
+    width: 90px;
+  }
+}
+
 /* BASE
 ------------------------------------------- */
 .content__title,
@@ -319,7 +333,7 @@ img {
 /*------------------------------------------- 
   HEADER 
 --------------------------------------------*/
-.header,
+.header__inner,
 .header__item {
   font-family: 'Noto Serif';
   font-style: Italic;
@@ -402,7 +416,7 @@ img {
 
 /* SERVICE
 ------------------------------------------ */
-.item__title > a {
+.item__title {
   font-size: 40px;
   font-weight: bold;
   line-height: 1.25;
@@ -432,12 +446,49 @@ img {
   letter-spacing: 0.05em;
 }
 
+/* -----------------------------------------
+              SP画面
+------------------------------------------ */
+@media screen and (max-width: 767px) {
+  .content__title {
+    font-size: 30px;
+    font-weight: Bold;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+  }
+  .content__sub-title {
+    font-size: 40px;
+    font-weight: Bold;
+    line-height: 1.675;
+    letter-spacing: 0.05em;
+  }
+  .concept__lead {
+    font-size: 20px;
+    font-weight: Bold;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+  .fv__title {
+    font-size: 37px;
+  }
+  .fv__sub-title {
+    font-size: 30px;
+  }
+  .item__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 0.05em;
+  }
+}
+
 #fv {
   padding-top: 10px;
 }
 
 .header__wrapper {
   position: fixed;
+  padding: 30px 0;
   width: 100%;
   z-index: 3;
   transition: background-color 1s;
@@ -448,10 +499,12 @@ img {
   transition: background-color 1s;
 }
 
-.header {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header__list {
@@ -460,6 +513,51 @@ img {
 
 .header__item {
   margin-left: 30px;
+}
+
+/* ハンバーガーメニュー 
+--------------------------- */
+.menu {
+  display: none;
+  width: 30px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+  border: none;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.bar__top {
+  top: 5px;
+}
+
+.bar__mid {
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.bar__bottom {
+  bottom: 8px;
+}
+
+/* SP画面
+------------------------------- */
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }
 
 .fv__bg {
@@ -481,6 +579,29 @@ img {
 
 .fv__title {
   margin-bottom: 31px;
+}
+
+@media screen and (max-width: 767px) {
+  .fv__bg {
+    height: 599px;
+    display: flex;
+  }
+  .fv__sub-title {
+    max-width: 312px;
+  }
+  .fv__content {
+    min-width: 348px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 58% auto;
+  }
+  .fv__title {
+    margin-bottom: 59px;
+  }
 }
 
 .concept__wrapper {
@@ -513,9 +634,39 @@ img {
   height: auto;
 }
 
+/* SP画面
+------------------------------- */
+@media screen and (max-width: 767px) {
+  .concept__wrapper {
+    padding-bottom: 40px;
+  }
+  .concept__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .concept__lead {
+    margin: 55px 0 34px;
+  }
+  .concept__text {
+    margin-bottom: 30px;
+  }
+  .concept__img {
+    max-width: 345px;
+    height: 150px;
+  }
+  .concept__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .content__sub-title {
+    margin-top: 40px;
+  }
+}
+
 .works__bg {
   background: url(/img/works-bgi@2x.jpg) no-repeat center/cover;
   height: 986px;
+  object-fit: cover;
 }
 
 .works__list {
@@ -567,12 +718,40 @@ img {
   box-shadow: 0 0 6px #1B1310;
 }
 
+/* -----------------------------------------
+              SP画面
+------------------------------------------ */
+@media screen and (max-width: 767px) {
+  .works__bg {
+    height: 1533px;
+    padding-bottom: 40px;
+  }
+  .works__title {
+    margin: 100px 0 50px;
+  }
+  .works__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -30px;
+  }
+  .works__item {
+    margin-right: 0;
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+}
+
 .service__wrapper {
   padding: 100px 0 70px;
 }
 
 .service__title {
   margin-bottom: 80px;
+}
+
+.service__list {
+  display: flex;
+  margin: 0 auto;
 }
 
 .service__item {
@@ -599,8 +778,44 @@ img {
 
 .item__title {
   position: absolute;
-  top: 135px;
-  left: 135px;
+  top: 40%;
+  left: 30%;
+}
+
+/* -----------------------------------------
+              SP画面
+------------------------------------------ */
+@media screen and (max-width: 767px) {
+  .service__wrapper {
+    padding-bottom: 64px;
+  }
+  .service__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .service__item {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100vw;
+    max-width: 100%;
+    height: 250px;
+  }
+  .service__item a {
+    height: 100%;
+  }
+  .service__item img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  .service__img {
+    height: 250px;
+  }
+  .item__title {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+  }
 }
 
 .contact__bg {

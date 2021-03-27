@@ -26,7 +26,7 @@
 /*------------------------------------------- 
   HEADER 
 --------------------------------------------*/
-.header,
+.header__inner,
 .header__item {
   font-family: 'Noto Serif';
   font-style: Italic;
@@ -90,7 +90,7 @@
 
 /* SERVICE
 ------------------------------------------ */
-.item__title > a {
+.item__title {
   @include f_around(40, 50, bold, 50);
   font-style: Italic;
   color: #FFFFFF;
@@ -110,5 +110,29 @@
 ------------------------------------------ */
 .copyright > small {
   @include f_around(14, 30, bold, 50);
+}
 
+/* -----------------------------------------
+              SP画面
+------------------------------------------ */ 
+@include mq-down($breakpoint: md) {
+  .content__title {
+    //フォントサイズ, 行送り, 太さ, 字送り
+    @include f_around(30, 48, Bold, 100);
+  }
+  .content__sub-title {
+    @include f_around(40, 67, Bold, 50);
+  }
+  .concept__lead {
+    @include f_around(20, 30, Bold, 50);
+  }
+  .fv__title {
+    font-size: 37px;
+  }
+  .fv__sub-title {
+    font-size: 30px;
+  }
+  .item__title {
+    @include f_around(20, 50, bold, 50);
+  }
 }

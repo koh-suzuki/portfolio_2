@@ -3,6 +3,7 @@
 }
 .header__wrapper {
   position: fixed;
+  padding: 30px 0;
   width: 100%;
   z-index: 3;
   transition: background-color 1s;
@@ -11,14 +12,57 @@
   background-color: #282F35;
   transition: background-color 1s;
 }
-.header {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .header__list {
   display: flex;
 }
 .header__item {
   margin-left: 30px;
+}
+
+/* ハンバーガーメニュー 
+--------------------------- */ 
+.menu {
+  display: none;      
+  width: 30px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none; 
+}
+.bar{      
+  width: 100%;      
+  height: 3px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: #fff;    
+}  
+.bar__top{   
+  top: 5px;
+}
+.bar__mid{    
+  top: 45%;
+  transform: translate(-50%,-50%);
+}
+.bar__bottom{
+  bottom: 8px;
+}
+
+/* SP画面
+------------------------------- */ 
+@include mq-down($breakpoint: md) {
+  .header__nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }

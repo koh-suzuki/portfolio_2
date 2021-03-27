@@ -11,7 +11,7 @@
 <body>
   <section class="section__wrapper fv__bg" id="fv">
     <header class="header__wrapper">
-      <div class="header container">
+      <div class="header__inner">
         <h1 class="header__logo">Cresta Design</h1>
         <nav class="header__nav">
           <ul class="header__list">
@@ -21,6 +21,11 @@
             <li class="header__item"><a href="contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="menu">
+          <span class="bar bar__top"></span>
+          <span class="bar bar__mid"></span>
+          <span class="bar bar__bottom"></span>
+        </div>
       </div>
     </header>
     <div class="fv__content container">
@@ -101,26 +106,24 @@
         <hr class="border">
       </div>
       <div class="content__service__wrap">
-        <div class="works__list">
+        <div class="service__list">
           <div class="service__item">
             <a href="#">
-              <div class="hover__img">
-                <img src="/img/service-img01@2x.jpg" alt="serviceの画像1">
-              </div>
+              <img src="/img/service-img01@2x.jpg" alt="serviceの画像1">
+              <p class="item__title">Hearing</p>
             </a>
-            <p class="item__title"><a href="#">Hearing</a></p>
           </div>
           <div class="service__item">
             <a href="#">
               <img src="/img/service-img02@2x.jpg" alt="serviceの画像2">
+              <p class="item__title">Planning</p>
             </a>
-            <p class="item__title"><a href="#">Planning</a></p>
           </div>
           <div class="service__item">
             <a href="#">
               <img src="/img/sevice-img03@2x.jpg" alt="serviceの画像3">
             </a>
-            <p class="item__title"><a href="#">Direction</a></p>
+            <p class="item__title">Direction</p>
           </div>
         </div>
       </div>
@@ -137,7 +140,11 @@
         <div class="contact__wrap">
           <p class="contact__text">お気軽にご相談ください。</p>
           <div class="button__wrapper contact__btn">
-            <button type="button" class="btn">View more</button>
+            <a href="/html/contact.html" target="_blank">
+              <button type="button" class="btn">
+                View more
+              </button>
+            </a>
           </div>
         </div>
         <p class="content__sub-title reverse clear__light">Contact us</p>

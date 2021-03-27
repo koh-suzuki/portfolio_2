@@ -23,3 +23,31 @@
   }
 }
 
+/* SP画面
+------------------------------- */ 
+@include mq-down($breakpoint: md) {
+  .concept__wrapper {
+    padding-bottom: 40px;
+  }
+  .concept__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .concept__lead {
+    margin: 55px 0 34px;
+  }
+  .concept__text {
+    margin-bottom: 30px;
+  }
+  .concept__img {
+    max-width: 345px;
+    height: 150px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content__sub-title {
+    margin-top: 40px;
+  }
+}
