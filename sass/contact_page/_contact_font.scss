@@ -24,3 +24,14 @@
   @include f_around(16, 30, false, 50);
   color: #171717;
 }
+
+
+/* ------------------------------
+SP画面
+------------------------------- */ 
+@include mq-down($breakpoint: md) {
+  .media__sub__title {
+    //フォントサイズ, 行送り, 太さ, 字送り
+    @include f_around(40, 150, bold, 50);
+  }
+}

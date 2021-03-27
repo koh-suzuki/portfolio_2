@@ -334,14 +334,17 @@ SP画面
   HEADER 
 --------------------------------------------*/
 .header__inner,
-.header__item {
+.header__item > a {
   font-family: 'Noto Serif';
   font-style: Italic;
   color: #FFFFFF;
 }
 
 .header__item > a {
-  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.375;
+  letter-spacing: 0.05em;
 }
 
 .header__logo {
@@ -507,6 +510,10 @@ SP画面
   margin: 0 auto;
 }
 
+.header__logo {
+  padding-left: 15px;
+}
+
 .header__list {
   display: flex;
 }
@@ -524,6 +531,7 @@ SP画面
   position: relative;
   z-index: 3;
   border: none;
+  margin-right: 15px;
 }
 
 .bar {
@@ -549,7 +557,25 @@ SP画面
   bottom: 8px;
 }
 
-/* SP画面
+/* ハンバーガーメニューの閉じる挙動
+------------------------------------------- */
+.menu.close .bar__top {
+  transform: translate(-50%, 10px) rotate(45deg);
+  transition: transform .3s;
+}
+
+.menu.close .bar__mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.menu.close .bar__bottom {
+  transform: translate(-50%, -13px) rotate(-45deg);
+  transition: transform .3s;
+}
+
+/* ------------------------------
+SP画面
 ------------------------------- */
 @media screen and (max-width: 767px) {
   .header__nav {
@@ -557,6 +583,36 @@ SP画面
   }
   .menu {
     display: block;
+  }
+  /* ハンバーガーメニューの全画面表示
+  ------------------------------------------- */
+  .header__nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1B1310;
+    z-index: 3;
+  }
+  .header__nav.header__list {
+    display: block;
+    transform: translate(-50%, -50%);
+  }
+  .header__item {
+    margin-bottom: 40px;
+  }
+  body.noscroll {
+    overflow: hidden;
   }
 }
 
@@ -671,6 +727,10 @@ SP画面
 
 .works__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -680,7 +740,6 @@ SP画面
   max-width: 320px;
   background-color: #ffffff;
   box-shadow: 0 0 6px #000000;
-  margin-right: 20px;
 }
 
 .works__img img {
@@ -733,10 +792,11 @@ SP画面
     display: flex;
     flex-direction: column;
     margin-bottom: -30px;
+    max-width: 320px;
   }
   .works__item {
+    width: 320px;
     margin-right: 0;
-    max-width: 320px;
     margin-bottom: 30px;
   }
 }
@@ -886,6 +946,18 @@ SP画面
   color: #171717;
 }
 
+/* ------------------------------
+SP画面
+------------------------------- */
+@media screen and (max-width: 767px) {
+  .media__sub__title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 3.75;
+    letter-spacing: 0.05em;
+  }
+}
+
 /* contactの背景画像内
 ----------------------------------- */
 .contact__fv__wrapper {
@@ -895,8 +967,8 @@ SP画面
 
 .contact__title--center {
   position: absolute;
-  top: 186px;
-  left: 586px;
+  top: 42%;
+  left: 42%;
   z-index: 1;
 }
 
@@ -951,5 +1023,17 @@ SP画面
 .form__submit {
   margin-top: 80px;
   text-align: center;
+}
+
+/* ------------------------------
+SP画面
+------------------------------- */
+@media screen and (max-width: 767px) {
+  .contact__main__wrapper {
+    padding: 0 15px;
+  }
+  .form__wrapper {
+    padding-bottom: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

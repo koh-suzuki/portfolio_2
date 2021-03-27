@@ -10,8 +10,15 @@ $(function() {
     }
   });
 
-  $('.nav_toggle').on('click', function () {
-    $('.nav_toggle, .nav').toggleClass('show');
+  /* ハンバーガーメニューの開閉ボタン
+  ------------------------------------------ */ 
+  $('.menu').on('click',function(){
+    $(this).toggleClass('close');
+    $('.header__nav').fadeToggle(500);
+    
+    // ボタンクリック後、画面スクロールの使用を禁止
+    $('body').toggleClass('noscroll');
   });
+  /* --------------------------------------  */ 
     
 });

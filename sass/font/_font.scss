@@ -27,13 +27,14 @@
   HEADER 
 --------------------------------------------*/
 .header__inner,
-.header__item {
+.header__item > a {
   font-family: 'Noto Serif';
   font-style: Italic;
   color: #FFFFFF;
 }
 .header__item > a {
-  color: #FFFFFF;
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(16, 22, bold, 50);
 }
 .header__logo {
   // //フォントサイズ, 行送り, 太さ, 字送り

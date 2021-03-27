@@ -6,8 +6,8 @@
 }
 .contact__title--center {
   position: absolute;
-  top: 186px;
-  left: 586px;
+  top: 42%;
+  left: 42%;
   z-index: 1;
 }
 .contact__sub-title {
@@ -53,4 +53,16 @@
 .form__submit {
   margin-top: 80px;
   text-align: center;
+}
+
+/* ------------------------------
+SP画面
+------------------------------- */ 
+@include mq-down($breakpoint: md) {
+  .contact__main__wrapper {
+    padding: 0 15px;
+  }
+  .form__wrapper {
+    padding-bottom: 80px;
+  }
 }

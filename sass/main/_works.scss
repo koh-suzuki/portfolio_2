@@ -5,6 +5,10 @@
 }
 .works__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 .works__item {
@@ -13,7 +17,6 @@
   max-width: 320px;
   background-color: #ffffff;
   box-shadow: 0 0 6px#000000;
-  margin-right: 20px;
 }
 .works__img img {
   width: 100%;
@@ -59,10 +62,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: -30px;
+    max-width: 320px;
   }
   .works__item {
+    width: 320px;
     margin-right: 0;
-    max-width: 320px;
     margin-bottom: 30px;
   }
 }
